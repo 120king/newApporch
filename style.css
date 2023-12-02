@@ -1,0 +1,1609 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Irish+Grover&family=Libre+Bodoni&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Libre+Bodoni&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    zoom: none;
+    overflow-X: hidden;
+}
+body::-webkit-scrollbar{
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+    background-color:  #3d3d3d;
+}  
+body::-webkit-scrollbar-track{
+    background-color: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:space-between;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+nav .logo img{
+    position: absolute;
+    margin-left: -25%;
+    margin-top: -3%;
+    height: 90px;
+}
+nav .Heading{
+    position: relative;
+    list-style: none;
+    display: flex; 
+    margin-left: -25%;
+}
+nav .Heading i{
+    color: #1f1f1f;
+}
+nav .Heading li a{
+    position: relative;
+    display: grid;
+    white-space: nowrap;
+    justify-content: space-evenly;
+    line-height: 80px;
+    color: rgb(6, 0, 0);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+/*nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    width: 100%;
+    height: 8px;
+    background: black;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: transform .3s;
+}
+nav ul li a :hover a::after{
+    transform: scale(.5);
+}*/
+nav ul li a:hover{
+    color:  #ffec00;
+}
+.button{
+    width: 250px;
+    height: 80px;
+    margin-top: 95%;
+    border-radius: 12px;
+    border: none;
+    background-color:  #ffec00;
+    font-family: 'Lato', sans-serif;
+    font-style: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+.part1{
+    width: 100%;
+    height: 108vh;
+    background: url(main/picture3.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.part1 .title{
+    position: absolute;
+    white-space: nowrap;
+    font-size: 50px;
+}
+.part1 .title h1{
+    position: absolute;
+    margin-left: -35%;
+    transform: translateY(-10%);
+    font-family: 'Libre Bodoni', serif;
+    color: #fff;
+}
+/*a Section strats from here .this was for trail but now its permenent*/
+.trail2 .myFarm{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 460px;
+    z-index: 30;
+    transform: translateY(-11%);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow:0px 25px 20px -20px rgba(225, 225, 225, .95 );
+ }
+ .trail2 .myFarm span{
+    position: relative;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 62px;
+    font-size: 70px;
+    font-weight: 400px;
+    font-family: irish grover;
+ }
+ .trail2 .myFarm p{
+    position: relative;
+    width: 623px;
+    height: 220px;
+    font-size: 22px;
+    font-weight: 400px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    transform: translateX(10%); 
+ }
+ @media  screen and (max-width:1400px){
+    body{
+        overflow-X: hidden;
+    }
+    .part1{
+        width: 101%;
+    }
+    .trail2 .myFarm{
+        width: 101vw;
+      }
+ }
+ @media  screen and (max-width:1050px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    .part1 .title{
+        margin-top: -2%;
+    }
+    .part1 .title .button{
+        margin-top: 75%;
+    }
+    .part1{
+        width: 100%;
+    }
+    .trail2 .myFarm{
+        width: 100%;
+        height: 48vh;
+    }
+    .trail2 .myFarm span{
+        font-size: 3.5rem;
+    }
+    .trail2 .myFarm p{
+        white-space: nowrap;
+        font-size: 18px;
+    }
+ }
+ @media  screen and (max-width:950px){
+    body{
+        overflow-X: hidden;
+    }
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    nav .Heading{
+        position: absolute;
+        margin-top: 3%;
+        left: 65%;
+    }
+     .part1{
+        width: 100%;
+        height: 150vh;
+        background: url(main/picture3.png);
+        background-position: center;
+        background-size: cover;
+     }
+     nav .logo img{
+        position: absolute;
+        left: 25%;
+        height: 90px;
+     }
+     .part1 .title h1{
+        position: absolute;
+        white-space:pre;
+        margin-top: -25%;
+        font-size: 3rem;
+     }
+     .part1 .title .button{
+        position: absolute;
+        justify-content: center;
+        width: 106px;
+        height: 50px;
+        font-size: 1rem;
+        margin-left: -60%;
+     }
+     .trail2 .myFarm{
+        width: 100%;
+        height: 70vh;
+        transform: translateY(-20%);
+    }
+    .trail2 .myFarm span{
+        font-size: 2.5rem;
+    }
+    .trail2 .myFarm p{
+        font-size: 15px;
+    }
+ 
+ }
+ @media  screen and (max-width:850px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-X: visible;
+    }
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    nav .Heading{
+        position: absolute;
+        margin-top: 10%;
+        left: 25%;
+    }
+     .part1{
+        width: 100%;
+        background: url(main/picture3.png);
+        background-position: center;
+        background-size: cover;
+     }
+     nav .logo img{
+        position: absolute;
+        left: -2%;
+        height: 90px;
+     }
+     .part1 .title h1{
+        position: absolute;
+        white-space: pre;
+        margin-top: 20%;
+     }
+     .part1 .title .button{
+        position: absolute;
+        justify-content: center;
+        margin-left: -70%;
+     }
+     .trail2 .myFarm{
+        width: 101.5vw;
+    }
+    .trail2 .myFarm span{
+        font-size: 2.5rem;
+    }
+    .trail2 .myFarm p{
+        font-size: 15px;
+    }
+ }
+ 
+ @media  screen and (min-width:250px)  and (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    nav .logo img{
+        position: absolute;
+        left: -3%;
+        height: 60px;
+    }
+    .part1 .title{
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+        height: 500px;
+        white-space: nowrap;
+    }
+    .part1 .title h1{
+        position: relative;
+        left: 4%;
+        max-width: 100%;
+        font-size: 11vw;
+    }
+    .part1 .title .button{
+        margin: 0;
+        margin-top: -33%;
+        margin-left: -43%;
+        width: 40vw;
+        height: 15vw;
+    }
+    .part1{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 110vh;
+        background: url(main/picture4.png) rgba(0,0,0,0.9);
+        background-size: cover;
+        background-position: center;
+    }
+    nav .Heading li a{
+        display: none;
+    }
+    nav .logo img{
+        margin-left: 5%;
+    }
+    .trail2 .title{
+        font-size: 30px;
+    }
+    .trail2 .myFarm{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 65vh;
+        transform: translateY(-12%);
+    }
+    .trail2 .myFarm span{
+        position: absolute;
+        white-space: nowrap;
+        margin-top: 3%;
+        right:calc(100% / 7);
+        font-size: 8vw;
+    }
+    .trail2 .myFarm p{
+        margin: 0;
+        max-width: 100%;
+        position: absolute;
+        text-align: center;
+        word-wrap: break-word;
+        justify-content: center;
+        top: calc(100% / 9);
+        right:calc(100% / 10);
+        font-size: 3vw;
+    }
+ }
+ 
+/*section2 starts here*/
+section.section2 .part2{
+    position: absolute;
+    z-index: 25;
+    transform: translateY(40%);
+    background-color: black;
+    width: 100%;
+    height: 105vh;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 0px 25px 20px -20px rgba(225, 225, 225, .95 );
+}
+.section2 .bulletp1{
+    padding-left: 90px;
+}
+.MainH{
+    position: absolute;
+    display: flex;
+    margin-top: 0%;
+    margin-left: 5%;
+    color: #fff;
+    font-size: 50px;
+    font-family: irish grover;
+}
+.MainH2{
+    color: white;
+    margin-top: 13%;
+    margin-left:50%;
+    font-size: 50px;
+    font-family: irish grover;
+}
+.Spart{
+    position: absolute;
+    margin-top: 5%;
+    column-count: 2;
+    column-gap: 35px;
+    column-width: 250%;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+.Spart2{
+    position: absolute;
+    margin-top: -1%;
+    margin-left: 43%;
+    column-count: 2;
+    column-gap: 38px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+.section2 .bulletpart2{
+    display: flex;
+    margin-top: 10%;
+    color: #fff;
+}
+.MainH3{
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 5%;
+    font-size: 50px;
+    font-family: irish grover;
+
+}
+.Spart3{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 13%;
+    margin-left: 0%;
+    column-count: 2;
+    column-gap: 1px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    column-width: 250%;
+    color: white;
+}
+.MainH4{
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 45%;
+    margin-right: 0;
+    font-size: 50px;
+    word-wrap: nowrap;
+    font-family: irish grover; 
+}
+.Spart4{
+    font-size: 20px;
+    margin-top: 13.5%;
+    margin-left:46% ;
+    column-count: 2;
+    column-gap: 38px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    column-width: 250%;
+    color: white;
+}
+@media  screen and (max-width:1400px){
+    section.section2 .part2{
+        width: 101%;
+        height: 75vh;
+    }
+}
+@media  screen and (max-width:1250px){
+    section.section2 .part2{
+        width: 100.1vw;
+        height: 80vh;
+        transform: translateY(48%);
+    }
+}
+@media  screen and (max-width:1050px){
+    section.section2 .part2{
+        width: 100%;
+        height: 100vh;
+        transform: translateY(23%);
+    }
+    .section2 .bulletp1{
+        display: grid;
+        padding-left: 6%;
+        margin-top: 5%;
+    }
+    .MainH{
+        position: absolute;
+        margin-top: 12%;
+        font-size: 40px;
+    }
+    .Spart{
+        position: absolute;
+        margin-top: 19%;
+        font-size: 16px;
+    }
+    .MainH2{
+        position: absolute;
+        margin-top: 12%;
+        font-size: 40px;
+    }
+    .Spart2{
+        position: absolute;
+        margin-top: 19%;
+        font-size: 16px;
+    }
+    .MainH3{
+        position: absolute;
+        margin-top: 25%;
+        font-size: 40px;
+    }
+    .Spart3{
+        position: absolute;
+        margin-top: 32%;
+        font-size: 16px;
+    }
+    .MainH4{
+        position: absolute;
+        margin-top: 25%;
+        font-size: 40px;
+    }
+    .Spart4{
+        position: absolute;
+        margin-top: 32%;
+        font-size: 16px;
+    }
+}
+@media  screen and (max-width:950px){
+    section.section2 .part2{
+        width: 100%;
+        height: 125vh;
+        transform: translateY(34%);
+    }
+    .section2 .bulletp1{
+        display: grid;
+        padding-left: 6%;
+    }
+    .MainH{
+        position: absolute;
+        margin-top: 7%;
+        font-size: 40px;
+    }
+    .Spart{
+        position: absolute;
+        margin-top: 14%;
+        font-size: 16px;
+    }
+    .MainH2{
+        position: absolute;
+        margin-top: 7%;
+        font-size: 40px;
+    }
+    .Spart2{
+        position: absolute;
+        margin-top: 14%;
+        font-size: 16px;
+    }
+    .MainH3{
+        position: absolute;
+        margin-top: 18%;
+        font-size: 40px;
+    }
+    .Spart3{
+        position: absolute;
+        margin-top: 26%;
+        font-size: 16px;
+    }
+    .MainH4{
+        position: absolute;
+        margin-top: 18%;
+        font-size: 40px;
+    }
+    .Spart4{
+        position: absolute;
+        margin-top: 26%;
+        font-size: 16px;
+    }
+}
+@media  screen and (max-width:850px){
+    section.section2 .part2{
+        position: absolute;
+        width: 101.5%;
+        transform: translateY(40%);
+    }
+    .section2 .bulletp1{
+        display: grid;
+        padding-left: 0px;
+    }
+    .MainH{
+        position: absolute;
+        margin-top: 12%;
+        font-size: 40px;
+    }
+    .Spart{
+        position: absolute;
+        margin-top: 19%;
+        font-size: 16px;
+    }
+    .MainH2{
+        position: absolute;
+        margin-top: 12%;
+        font-size: 40px;
+    }
+    .Spart2{
+        position: absolute;
+        margin-top: 19%;
+        font-size: 16px;
+    }
+    .MainH3{
+        position: absolute;
+        margin-top: 25%;
+        font-size: 40px;
+    }
+    .Spart3{
+        position: absolute;
+        margin-top: 32%;
+        font-size: 16px;
+    }
+    .MainH4{
+        position: absolute;
+        margin-top: 25%;
+        font-size: 40px;
+    }
+    .Spart4{
+        position: absolute;
+        margin-top: 32%;
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:250px) and (max-width:600px){
+
+    section.section2 .part2{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 265vw;
+        transform: translateY(100vw);
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        box-shadow: 0px 25px 20px -20px rgba(225, 225, 225, .95 );
+    }
+    .section2 .bulletp1{
+        padding-left: 0px;
+    }
+    .MainH{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: 23%;
+        margin-left: 11%;
+        color: #fff;
+        font-size: 12vw;
+        font-family: irish grover;
+    }
+    .MainH2{
+        position: absolute;
+        white-space: nowrap;
+        color: white;
+        margin-top: 75%;
+        margin-left:7%;
+        font-size: 12vw;
+        font-family: irish grover;
+    }
+    .Spart{
+        position: absolute;
+        font-size: 5vw;
+        margin-top: 40%;
+        margin-left: 6%;
+        font-family: 'Lato', sans-serif;
+    }
+    .Spart2{
+        position: absolute;
+        font-size: 5vw;
+        column-gap: 35px;
+        margin-top: 95%;
+        margin-left: 6%;
+        font-family: 'Lato', sans-serif;
+    }
+    .MainH3{
+        position: absolute;
+        color: white;
+        white-space: nowrap;
+        margin-top: 135%;
+        margin-left:6%;
+        font-size: 12vw;
+        font-family: irish grover;
+    }
+    .Spart3{
+        position: absolute;
+        font-size: 5vw;
+        column-gap: 35px;
+        margin-top: 155%;
+        margin-left: 6%;
+        font-family: 'Lato', sans-serif;
+    }
+    .MainH4{
+        position: absolute;
+        color: white;
+        margin-top: 188%;
+        white-space: nowrap;
+        margin-left: 4%;
+        font-size: 9vw;
+        font-family: irish grover;
+    }
+    .Spart4{
+        position: absolute;
+        font-size: 4.5vw;
+        white-space: nowrap;
+        column-gap: 1px;
+        margin-top: 205%;
+        margin-left: 5%;
+        font-family: 'Lato', sans-serif;
+    }
+}  
+
+/*section3 starts here*/
+.section3{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+    padding: 0 10px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    margin-top: 0;
+    transform: translateY(135%);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 0px 25px 20px -20px rgba(225, 225, 225, .95 );
+}
+.section3 .GalleryH{
+    position: absolute;
+    margin-top: -25%;
+    left: 43%;
+    color: #fff;
+    font-size: 50px;
+    font-family: irish grover;
+}
+.section3 .Gallery{
+    position: absolute;
+    font-size: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-top: 3%;
+}
+.section3 .Gallery::-webkit-scrollbar{
+    display: none;
+}
+.section3 .ImgBtn button{
+    background:#1f1f1f;
+    color: #818181;
+    font-size: 25px;
+    width: 200px;
+    height: 65px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #1f1f1f;
+    top: 80%;
+    left: 42%;
+}
+
+.section3 .Gallery img{
+    height: 330px;
+    object-fit:fill;
+    margin-left: 15px;
+    width: calc(100%/3);
+}
+.section3 img:first-child{
+    margin-left: 0px;
+}
+@media  screen and (max-width:1400px){
+    .section3{
+        width: 99.56%;
+        height: 75vh;
+        transform: translateY(128%);
+    }
+}
+@media  screen and (max-width:1250px){
+    .section3{
+        transform: translateY(105%);
+    }
+    .section3 .GalleryH{
+        position: absolute;
+        margin-top: -35%;
+    }
+}
+@media  screen and (max-width:1050px){
+    .section3{
+        width: 100%;
+        height: 100vh;
+        transform: translateY(105%);
+    }
+    .section3 .Gallery img{
+        height: 230px;
+    }
+    .section3 .GalleryH{
+        position: absolute;
+        margin-top: -28%;
+    }
+}
+@media screen and (max-width: 950px){
+    .section3{
+        height: 150vh;
+        width: 99.8vw;
+        transform: translateY(100%);
+    }
+    .section3 .GalleryH{
+        top: 90%;
+    }
+    .section3 .Gallery img{
+        width: calc(100%/2);
+        height: 250px;
+    }
+    .section3 .GalleryH{
+        position: absolute;
+        margin-top: -48%;
+    }
+}
+@media  screen and (max-width:850px){
+    .section3{
+        width: 99.1vw;
+        transform: translateY(105%);
+    }
+    .section3 .GalleryH{
+        position: absolute;
+        margin-top: -52%;
+    }
+}
+@media  screen and (min-width:250px) and (max-width:600px){
+    .section3{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        width: 100%;
+        height: 150vw;
+        margin-top: 0;
+        transform: translateY(233%);
+      }
+    .section3 .GalleryH{
+        position: absolute;
+        top: calc(50% / 1);
+        left: 30%;
+        font-size: 3.5rem;
+        color: #fff;
+    }
+    .section3 .Gallery img{
+        overflow-x: hidden;
+        min-height: 10vw;
+        max-height: 55vw;
+        margin-left: 8px;
+        min-height: 250px;
+        max-width: 600px;
+        width: calc(100% / 1);
+    }
+    .section3 .ImgBtn button{
+        left: 28%;
+    }
+}
+/*Section 4 starts here*/
+.section4{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 6;
+    padding: 0%;
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transform: translateY(225%);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 0px 25px 20px -20px rgba(225, 225, 225, .95 );
+}
+.section4 .Heading h1{
+    position: absolute;
+    color: #fff;
+    font-size: 3.5rem;
+    font-family: irish grover;
+    top: 13%;
+    left: 40%;
+}
+.section4 .MainTestimonial{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 17%;
+    margin-left: 3%;
+
+}
+ .row{
+    display: flex;
+    flex: 0px 0px auto;
+}
+.TestimonialsContainer{
+    display: flex;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Add smooth scrolling effect */
+    white-space: nowrap;
+    gap: 20px;
+}
+.TestimonialsContainer::-webkit-scrollbar{
+    display: none;
+}
+ .Discription,
+ .Discription2,
+ .Discription3,
+ .Discription4{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 55px;
+    width: 50%;
+    height: 80%;
+    max-height: 85%;
+    border-radius: 30px;
+    border: 5px solid white;
+}
+ .Testimonial1,
+ .Testimonial2,
+ .Testimonial3,
+ .Testimonial4{
+    color: #fff;
+    font-size: 20.5px;
+    font-family: 'Lato', sans-serif;
+}
+.Testimonial1,
+.Testimonial2{
+    margin-left: -5%;
+    margin-top: -3%;
+}
+.Dh1{
+    position: relative;
+    margin-top: 5%;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+.Dh2{
+    position: relative;
+    margin-top: -5%;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+.Dh3{
+    position: relative;
+    margin-top: 10%;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+.Dh4{
+    position: relative;
+    margin-top: 6%;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+@media  screen and (max-width:1400px){
+    .section4{
+        width: 101%;
+        height: 74vh;
+    }
+    .section4 .Heading h1{
+        margin-top: -.5%;
+    }
+}
+@media  screen and (max-width:1250px){
+    .section4{
+        transform: translateY(198%);
+    }
+    .section4 .Heading h1{
+        text-align: center;
+        margin-top: -1%;
+        margin-left: -2%;
+     }
+}
+@media  screen and (max-width:1050px){
+    .section4{
+        width: 100%;
+        height: 100vh;
+        transform: translateY(195%);
+    }
+    .section4 .Heading h1{
+       text-align: center;
+       margin-top: 4%;
+       margin-left: -5%;
+    }
+    .Discription,
+    .Discription2,
+    .Discription3,
+    .Discription4{
+        margin-top: 4%;
+        max-width: 560px;
+        width: calc(100%/1);
+    }
+    .Discription4{
+        margin-right: 5%;
+        max-width: 600px;
+    }
+    .Testimonial1,
+    .Testimonial2,
+    .Testimonial3,
+    .Testimonial4{
+        text-align: center;
+        margin-left: -20%;
+        font-size: 18.5px;
+   }
+}
+@media screen and (max-width: 950px){
+    .section4{
+        width: 100%;
+        height: 170vh;
+        transform: translateY(165%);
+    }
+    .section4 .Heading h1{
+       text-align: center;
+       margin-left: -8%;
+       margin-top: 3.5%;
+    }
+    .Discription,
+    .Discription2,
+    .Discription3,
+    .Discription4{
+        margin-top: 10%;
+        max-width: 525px;
+        width: calc(100%/.5);
+    }
+    .Discription4{
+        max-width: 555px;
+        margin-right: 5%;
+    }
+    .Testimonial1,
+    .Testimonial2,
+    .Testimonial3,
+    .Testimonial4{
+        text-align: center;
+        margin-left: -20%;
+        font-size: 17px;
+   }
+}
+@media  screen and (max-width:850px){
+    .section4{
+        width: 101.5%;
+        transform: translateY(170%);
+    }
+    .section4 .Heading h1{
+       text-align: center;
+       margin-left: -8%;
+    }
+    .Discription,
+    .Discription2,
+    .Discription3,
+    .Discription4{
+        margin-top: 10%;
+        max-width: 525px;
+        width: calc(100%/.5);
+    }
+    .Testimonial1,
+    .Testimonial2,
+    .Testimonial3,
+    .Testimonial4{
+        font-size: 18.5px;
+   }
+}
+@media  screen and (min-width:250px) and (max-width:600px){
+    .section4{
+        position: absolute;
+        width: 100%;
+        height: 140vw;
+        margin: 0;
+        padding: 0;
+        transform: translateY(345%);
+    }
+    .TestimonialsContainer{
+       max-width: 100%;
+    }
+    .Testimonial1,
+    .Testimonial2,
+    .Testimonial3,
+    .Testimonial4{
+        display: flex;
+        text-align: center;
+        justify-content: top;
+        margin-top: -6%;
+        margin-left: -13vw;
+        font-size: 3vw;
+ }
+    .Testimonial4{
+        left: calc(100% / 10);
+    }
+    .Discription,
+    .Discription2,
+    .Discription3,
+    .Discription4{
+        margin-top: 35%;
+        margin-left: 0;
+        width: calc(100% / 1);
+        height: 250px;
+    }
+    .Discription4{
+        width: 600px;
+    }
+    .Dh1,
+    .Dh2,
+    .Dh3,
+    .Dh4{
+        margin-top: 10%;
+        font-size: 1.5rem;
+    }
+    .MainTestimonial{
+        max-width: 100%;
+    }
+    .section4 .Heading h1{
+        font-size: 13vw;
+        margin-top: 12%;
+        left: 25%;
+    }
+}
+/*Footer starts here*/
+.LastPart{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #444444;
+    transform: translateY(315%);
+}
+.LastPart .Infomation{
+    margin-left: 5%;
+}
+.LastPart .Infomation .phoneN{
+    position: absolute;
+    display: flex;
+    margin-top: 15%;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    
+}
+.LastPart .Infomation .phoneN a{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #fff;
+}
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+.LastPart .Infomation .Email{
+    position: absolute;
+    display: flex;
+    margin-top: 18%;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+.LastPart .Infomation .Email a{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #fff;
+}
+.LastPart .Infomation i{
+    font-size: 1.3em;
+}
+.followus{ position: absolute;
+    color: white;
+    top: 58%;
+}
+.followus h3{
+    font-size: 2rem;
+}
+.followus .icons {
+    display: flex;
+    margin-top: -15%;
+    font-size: 1.8rem;
+    gap: 25px;
+    
+}
+.followus .icons a{
+    text-decoration: none;
+    color: white;
+}
+.LastPart .textBox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 410px;
+   
+}
+.LastPart .textBox .Input{
+    position: absolute;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    align-items: center;
+    background-color: #868686;
+    border: none;
+    padding: 10px 40px;
+    border-radius:40px ;
+}
+.textBox .Input h1{
+    color: #282828;
+}
+form input{
+    height: 40px;
+}
+form input, form textarea{
+    position: relative;
+    width: 100%;
+    margin-top: 8%;
+    margin: 10px 0;
+    font-size: 16px;
+    background-color: #d9d9d9;
+    border: none;
+    outline: none;
+    border-radius: 10px
+}
+.LastPart .textBox .Input button{
+    width: 140px;
+    height: 50px;
+    border-radius: 15px;
+    background-color:  #ffec00;
+    border: 1px solid  #ffec00;
+    font-size: 1.5rem;
+    font-style: bold;
+    font-weight: 500px;
+    cursor: pointer;
+    margin: 15px auto 0;
+}
+.LastPart .aside {
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 68%;
+}
+.LastPart .aside .Map {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+}
+.LastPart .aside .Map iframe{
+    width: 460px; 
+    height: 300px;
+}
+.LastPart .aside h3{
+    margin-top: 88%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+@media  screen and (max-width:1400px){
+    .LastPart{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        transform: translateY(235%);
+    }
+    .LastPart .textBox{
+        position: absolute;
+        left: -5%;
+    }
+    .aside{
+        position: absolute;
+        right: 8.5%;
+    }
+    .LastPart .aside .Location{
+        white-space: nowrap;
+       
+    }
+    .LastPart .Infomation .phoneN{
+        position: absolute;
+        margin-left: -2.8%;
+    }
+    .LastPart .Infomation .Email{
+        position: absolute;
+        margin-left: -2.8%;
+    }
+    .followus{
+        position: absolute;
+        margin-left: -2.5%;
+        margin-top: -13%;
+    }
+    .CopyRight{
+        top: 20%;
+    }
+}
+@media  screen and (max-width:1250px){
+    .LastPart{
+        position: absolute;
+        height: 140vh;
+        transform: translateY(208%);
+    }
+    .LastPart .textBox{
+        position: absolute;
+        margin-top: 14%;
+        left: -30%;
+    }
+    .aside{
+        position: absolute;
+        right: 15%;
+    }
+    .LastPart .aside .Map{
+        position: absolute;
+        right: 75%;
+        width: 80px;
+    }
+    .LastPart .aside .Location{
+        white-space: nowrap;
+        margin-right: -25%;
+    }
+    .LastPart .Infomation .phoneN{
+        position: absolute;
+        margin-top: 60%;
+        font-size: 1.3rem;
+    }
+    .LastPart .Infomation .Email{
+        position: absolute;
+        font-size: 1.3rem;
+        margin-top: 65%;
+    }
+    .followus{
+        position: absolute;
+        margin-left: 64%;
+    }
+    .followus h3{
+        font-size: 2.6rem;
+    }
+    .followus .icons i{
+        font-size: 3.3rem;
+    }
+    .CopyRight{
+        top: 48%;
+    }
+}
+@media  screen and (max-width:1050px){
+    .LastPart{
+        position: absolute;
+        width: 100%;
+        height: 180vh;
+        transform: translateY(130%);
+     }
+    .LastPart .textBox{
+        position: absolute;
+        margin-top: 40%;
+        left: -30%;
+    }
+    .aside{
+        position: absolute;
+        top: 20%;
+        right: 15%;
+    }
+    .LastPart .aside .Map{
+        position: absolute;
+        top: 18%;
+        right: 75%;
+        width: 80px;
+    }
+    .LastPart .aside .Location{
+        white-space: nowrap;
+        margin-right: 50%;
+        margin-top: 115%;
+    }
+    .LastPart .Infomation .phoneN{
+        position: absolute;
+        margin-top: 84%;
+        font-size: 1.3rem;
+    }
+    .LastPart .Infomation .Email{
+        position: absolute;
+        font-size: 1.3rem;
+        margin-top: 89%;
+    }
+    .followus{
+        position: absolute;
+        margin-left: 64%;
+        margin-top: 23%;
+    }
+    .followus h3{
+        font-size: 2.6rem;
+    }
+    .followus .icons i{
+        margin-top: 30%;
+        font-size: 3.3rem;
+    }
+    .CopyRight{
+        top: 55%;
+    }
+}
+@media screen and (max-width: 950px){
+    .LastPart{
+        position: absolute;
+        width: 100%;
+        height: 220vh;
+        transform: translateY(198%);
+    }
+    .LastPart .textBox{
+        position: absolute;
+        margin-top: 15%;
+        left: -35%;
+    }
+    .aside{
+        position: absolute;
+        top: 6.5%;
+        right: 12%;
+    }
+    .LastPart .aside .Map{
+        position: absolute;
+        right: 75%;
+        width: 80px;
+    }
+    .LastPart .aside .Location{
+        white-space: nowrap;
+        margin-right: -25%;
+    }
+    .LastPart .Infomation .phoneN{
+        position: absolute;
+        margin-top: 70%;
+        font-size: 1.3rem;
+    }
+    .LastPart .Infomation .Email{
+        position: absolute;
+        font-size: 1.3rem;
+        margin-top: 75%;
+    }
+    .followus{
+        position: absolute;
+        margin-left: 64%;
+        margin-top: 10%;
+    }
+    .followus h3{
+        font-size: 2.6rem;
+    }
+    .followus .icons i{
+        font-size: 3.3rem;
+    }
+    .CopyRight{
+        top: 46%;
+    }
+}
+@media  screen and (max-width:850px){
+    .LastPart{
+        position: absolute;
+        width: 100%;
+        height: 370vh;
+        transform: translateY(120%);
+    }
+    .LastPart .textBox{
+        position: absolute;
+        margin-top: 75%;
+        left: -10%;
+    }
+    .aside{
+        position: absolute;
+        top: 1%;
+        right: 35%;
+    }
+    .LastPart .aside .Map{
+        position: absolute;
+        right: 73%;
+        width: 80px;
+    }
+    .LastPart .aside .Location{
+        white-space: nowrap;
+        margin-right: -25%;
+    }
+    .LastPart .aside .Location h3{
+        margin-left: 8%;
+    }
+    .LastPart .Infomation .phoneN{
+        position: absolute;
+        margin-top: 135%;
+        font-size: 1.2rem;
+    }
+    .LastPart .Infomation .Email{
+        font-size: 1.2rem;
+        margin-top: 142%;
+    }
+    .followus{
+        white-space: nowrap;
+        margin-top: 33%;
+        margin-left: 64%;
+    }
+    .followus h3{
+        font-size: 2.6rem;
+    }
+    .followus .icons i{
+        font-size: 3.3rem;
+    }
+    .CopyRight{
+        top: 69%;
+    }
+}
+@media  screen and (min-width:250px) and (max-width:600px) {
+    .LastPart{
+        position: absolute;
+        margin: 0%;
+        padding: 0;
+        width: 100%;
+        height: 300vw;
+        transform: translateY(201%);
+    }
+    .LastPart .textBox{
+        position: absolute;
+        width: 90%;
+        margin-top: 48%;
+        left: -32%;
+    }
+    .LastPart .Infomation{
+        margin-top: 70%;
+    }
+    .LastPart .Infomation .phoneN{
+        position: absolute;
+        margin-top: 165%;
+        font-size: 4vw;
+    }
+    .LastPart .Infomation .Email{
+        font-size: 4vw;
+        margin-top: 175%;
+    }
+   /* .followus{
+        margin-top: 5%;
+        margin-left: 25%;
+    }
+    .followus h3{
+        font-size: 2rem;
+    }
+    .followus .icons i{
+        margin-top: 50%;
+        font-size: 2rem;
+    }*/
+    .LastPart .aside .Map{
+        position: relative;
+        margin: 0;
+        margin-left: calc(100% / 1.5);
+        margin-top: calc(100%/-1);
+    }
+    .LastPart .aside .Map iframe{
+        width: 80vw; 
+        height: 50vw;
+    }
+    .LastPart .aside .Location{
+        white-space: nowrap;
+        margin-left: -10%;
+    }
+    .LastPart .aside  h3{
+        margin: 0;
+        position: relative;
+        font-size: 5vw;
+        margin-top: -75%;
+    }
+    .aside{
+        position: absolute;
+        left: -55%;
+        top: 25%;
+    }
+    .CopyRight{
+        position: absolute;
+        top: 75%;
+    }
+
+}
+@media  screen and (max-width:380px){
+    .LastPart .aside  h3{
+        margin-top: -85%;
+    }
+}
+@media  screen and (max-width:330px){
+    .LastPart .aside  h3{
+        margin-top: -95%;
+    }
+    .CopyRight{
+        position: absolute;
+        top: 80%;
+    }
+    .LastPart .Infomation .phoneN{
+        margin-top: 185%;
+    }
+    .LastPart .Infomation .Email{
+        margin-top: 195%;
+    }
+}
+.CopyRight{
+    position: absolute;
+    width: 100%;
+    margin-top: 42.3%;
+}
+.LastPart .CopyRight h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600px;
+    left: 45%;
+    color: white;
+}
